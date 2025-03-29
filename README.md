@@ -46,6 +46,12 @@ psql -h localhost -U postgres -d mydatabase
 ```
 Password: mysecretpassword
 
+If not installed psql, then:
+```sh
+sudo apt update
+sudo apt install postgresql-client
+```
+
 🔧 Using pgAdmin (GUI Tool)
 Open pgAdmin.
 
