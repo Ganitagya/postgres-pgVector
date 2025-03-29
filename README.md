@@ -26,7 +26,7 @@ cd postgres-pgVector
 Run the following command to start PostgreSQL with pgvector:
 
 ```sh
-docker-compose up -d
+docker compose up -d
 ```
 
 This will:
@@ -73,29 +73,29 @@ docker ps
 
 ✅ Check Logs
 ```sh
-docker-compose logs -f
+docker compose logs -f
 ```
 
 ✅ Stop the Container
 ```sh
-docker-compose down
+docker compose down
 ```
 
 ✅ Start the Container Again
 ```sh
-docker-compose up -d
+docker compose up -d
 ```
 
 ✅ Restart the Container
 ```sh
-docker-compose restart
+docker compose restart
 ```
 
 ✅ Remove Everything (Including Data)
 ⚠️ WARNING: This will delete all stored data.
 
 ```sh
-docker-compose down -v
+docker compose down -v
 ```
 
 
@@ -129,8 +129,8 @@ environment:
 Apply the changes:
 
 ```sh
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 ```
 
 
