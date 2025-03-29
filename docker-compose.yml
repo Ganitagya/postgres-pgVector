@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  pgvector:
+    image: pgvector/pgvector:pg17
+    container_name: pgvector-container
+    restart: unless-stopped   # Ensures the container restarts automatically unless manually stopped.
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: mydatabase
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+    driver: local
