@@ -17,8 +17,8 @@ The setup ensures **persistent storage**, so your data is not lost even if the c
 
 ### **1️⃣ Clone the Repository**  
 ```sh
-git clone <your-github-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/Ganitagya/postgres-pgVector.git
+cd postgres-pgVector
 ```
 
 
